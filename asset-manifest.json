@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Appe/static/css/main.2073bd4e.css",
-    "main.js": "/Appe/static/js/main.25fb501f.js",
+    "main.css": "/Appe/static/css/main.8e90194c.css",
+    "main.js": "/Appe/static/js/main.358d27ec.js",
     "static/media/Rectangle 224.png": "/Appe/static/media/Rectangle 224.933c3ff61a69a506be45.png",
     "static/media/topslider.png": "/Appe/static/media/topslider.ed7e3833fdc363d59edc.png",
     "static/media/fa-solid-900.ttf": "/Appe/static/media/fa-solid-900.b48ad290d0335879a92b.ttf",
@@ -18,6 +18,7 @@
     "static/media/fa-solid-900.woff2": "/Appe/static/media/fa-solid-900.66104b766c3d0462b3c5.woff2",
     "static/media/fixedImg.png": "/Appe/static/media/fixedImg.27a8306208965ee752c7.png",
     "static/media/Rectangle 49 (10).png": "/Appe/static/media/Rectangle 49 (10).e75d3f0e02ae71226d0d.png",
+    "static/media/Rectangle 208.png": "/Appe/static/media/Rectangle 208.ae6ec972f7fc2c9c7783.png",
     "static/media/Rectangle 49 (8).png": "/Appe/static/media/Rectangle 49 (8).ffbdc79950ceefb68078.png",
     "static/media/Rectangle 49 (4).png": "/Appe/static/media/Rectangle 49 (4).8c3c8cfcd29520e126d5.png",
     "static/media/Rectangle 49 (3).png": "/Appe/static/media/Rectangle 49 (3).33c1018074912d11cbbe.png",
@@ -34,6 +35,7 @@
     "static/media/woman.png": "/Appe/static/media/woman.52b972cf921d911613a4.png",
     "static/media/Free shipping-pana 1.png": "/Appe/static/media/Free shipping-pana 1.2632ccd1607ae58d33ac.png",
     "static/media/signin.png": "/Appe/static/media/signin.211e05294c149f1fcc7a.png",
+    "static/media/Rectangle 208 (1).png": "/Appe/static/media/Rectangle 208 (1).70af3a383cc4c06edc03.png",
     "static/media/fa-regular-400.woff2": "/Appe/static/media/fa-regular-400.639d2000c1ece92eaec8.woff2",
     "static/media/Rectangle 68.png": "/Appe/static/media/Rectangle 68.051e82e607653bbd7038.png",
     "static/media/Logo 1.png": "/Appe/static/media/Logo 1.cd37773abd4c768353dd.png",
@@ -45,11 +47,11 @@
     "static/media/slick.ttf": "/Appe/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/Appe/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Appe/index.html",
-    "main.2073bd4e.css.map": "/Appe/static/css/main.2073bd4e.css.map",
-    "main.25fb501f.js.map": "/Appe/static/js/main.25fb501f.js.map"
+    "main.8e90194c.css.map": "/Appe/static/css/main.8e90194c.css.map",
+    "main.358d27ec.js.map": "/Appe/static/js/main.358d27ec.js.map"
   },
   "entrypoints": [
-    "static/css/main.2073bd4e.css",
-    "static/js/main.25fb501f.js"
+    "static/css/main.8e90194c.css",
+    "static/js/main.358d27ec.js"
   ]
 }
