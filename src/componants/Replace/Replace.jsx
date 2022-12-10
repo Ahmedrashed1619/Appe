@@ -8,6 +8,11 @@ export default function Replace() {
 
 
   useEffect(() => {
+    $('html , body').animate({ scrollTop: 0 }, 200);
+  }, []);
+
+
+  useEffect(() => {
     $('.sidebar-profile .replace').addClass('active');
 
     return () => {

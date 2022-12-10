@@ -8,6 +8,10 @@ import wallet3 from '../../images/profile/Group.png';
 export default function Wallet() {
 
   useEffect(() => {
+      $('html , body').animate({ scrollTop: 0 }, 200);
+  }, []);
+
+  useEffect(() => {
     $('.sidebar-profile .wallet').addClass('active');
 
     return () => {

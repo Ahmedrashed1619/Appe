@@ -1,10 +1,15 @@
 import React, { useContext, useEffect } from 'react';
 import { langContext } from '../context/store';
 import $ from 'jquery';
-import visa from '../../images/notifications/visa.png'
+import visa from '../../images/notifications/visa.png';
 import { AiOutlineDelete } from 'react-icons/ai'
 
+
 export default function Payment() {
+
+  useEffect(() => {
+    $('html , body').animate({ scrollTop: 0 }, 200);
+  }, []);
 
   useEffect(() => {
     $('.sidebar-profile .payments').addClass('active');

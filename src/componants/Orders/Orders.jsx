@@ -4,6 +4,10 @@ import $ from 'jquery';
 
 export default function Orders() {
 
+  useEffect(() => {
+    $('html , body').animate({ scrollTop: 0 }, 200);
+  }, []);
+
 
   const completed = () => {
     $('.completed').addClass('main-btn');

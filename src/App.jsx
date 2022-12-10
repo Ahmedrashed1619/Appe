@@ -36,6 +36,7 @@ import Payment from './componants/Payment/Payment';
 import User from './componants/User/User';
 import ProductDetails from './componants/ProductDetails/ProductDetails';
 import ServiceDetails from './componants/ServiceDetails/ServiceDetails';
+import SingleWishlist from './componants/SingleWishlist/SingleWishlist';
 
 
 
@@ -170,11 +171,12 @@ function App() {
                     <Route path='wallet' element={<Wallet />}/>
                     <Route path='replace' element={<Replace />}/>
                     <Route path='wishlist' element={<Wishlist />}/>
+                    <Route path='wishlist/:id' element={<SingleWishlist />}/>
                     <Route path='address' element={<Address />}/>
                     <Route path='payments' element={<Payment />}/>
                     <Route path='user' element={<User />}/>
                     <Route path='*' element={<Notfound />}/>
-                    
+
                 </Route>
 
                 <Route path='*' element={<Notfound />}/>

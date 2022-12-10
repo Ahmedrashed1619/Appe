@@ -52,6 +52,7 @@ export default function Signin() {
     const hideSignInPage = () => {
         $('.signin-page').addClass('d-none');
         $('.signin-page').removeClass('d-flex');
+        $('html , body').animate({ scrollTop: 0 }, 200);
     }
 
     const showSignUpPage = (callback) => {
@@ -63,6 +64,7 @@ export default function Signin() {
     const hideSignUpPage = () => {
         $('.signup-page').addClass('d-none');
         $('.signup-page').removeClass('d-flex');
+        $('html , body').animate({ scrollTop: 0 }, 200);
     }
 
     const showForgetPassPage = (callback) => {
@@ -74,6 +76,7 @@ export default function Signin() {
     const hideForgetPassPage = () => {
         $('.forgetpass-page').addClass('d-none');
         $('.forgetpass-page').removeClass('d-flex');
+        $('html , body').animate({ scrollTop: 0 }, 200);
     }
 
     // const showResetPassPage = (callback) => {
@@ -85,6 +88,7 @@ export default function Signin() {
     const hideResetPassPage = () => {
         $('.resetpass-page').addClass('d-none');
         $('.resetpass-page').removeClass('d-flex');
+        $('html , body').animate({ scrollTop: 0 }, 200);
     }
 
     // const showUpdatePassPage = (callback) => {
@@ -96,6 +100,7 @@ export default function Signin() {
     const hideUpdatePassPage = () => {
         $('.updatepass-page').addClass('d-none');
         $('.updatepass-page').removeClass('d-flex');
+        $('html , body').animate({ scrollTop: 0 }, 200);
     }
 
 
@@ -103,10 +108,10 @@ export default function Signin() {
     return (
         <>
         <section>
-            <div className="mt-fixed position-relative">
+            <div className="mt-fixed position-relative" dir={isEng ? 'ltr' : 'rtl'}>
 
                 {/* sign in */}
-                <div className="d-flex justify-content-center align-items-center signin-page" dir={isEng ? 'ltr' : 'rtl'}>
+                <div className="d-none justify-content-center align-items-center signin-page">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-lg-6 col-md-8 col-10">
                             <form className='p-4 bg-white rounded-4 position-relative'>
@@ -128,7 +133,7 @@ export default function Signin() {
                                             <label className="fs-5 fw-bold mb-1" htmlFor="password">Password</label>
                                             <div className="input-group">
                                                 <input type="password" className='bg-transparent mx-auto' required name="password" id="password" />
-                                                <i className="fa-regular fa-eye" onClick={showHidePass}></i>
+                                                <i className={`fa-regular fa-eye ${isEng ? 'right-icon' : 'left-icon'}`} onClick={showHidePass}></i>
                                             </div>
                                         </div>
                                     </div>
@@ -142,7 +147,7 @@ export default function Signin() {
                                             Sign in
                                         </button>
                                     </div>
-                                    <h6 className='fw-bold mb-0 d-flex justify-content-center align-items-center'>Don’t have an account? <span className='fw-bold main-color mb-0 ms-1 text-decoration-underline' style={{cursor : 'pointer'}} onClick={() => {
+                                    <h6 className='fw-bold mb-0 d-flex justify-content-center align-items-center'>Don’t have an account? <span className={`fw-bold main-color mb-0 ${isEng ? 'ms-1' : 'me-1'} text-decoration-underline`} style={{cursor : 'pointer'}} onClick={() => {
                                         showSignUpPage(hideSignInPage)
                                     }}> Sign Up</span></h6>
                                 </div>
@@ -210,7 +215,7 @@ export default function Signin() {
                                             <label className="fs-5 fw-bold mb-1" htmlFor="password">Password</label>
                                             <div className="input-group">
                                                 <input type="password" className='bg-transparent mx-auto' required name="password" id="password" />
-                                                <i className="fa-regular fa-eye" onClick={showHidePass}></i>
+                                                <i className={`fa-regular fa-eye ${isEng ? 'right-icon' : 'left-icon'}`} onClick={showHidePass}></i>
                                             </div>
                                         </div>
                                     </div>
@@ -219,7 +224,7 @@ export default function Signin() {
                                             <label className="fs-5 fw-bold mb-1" htmlFor="repassword">Confirm Password</label>
                                             <div className="input-group">
                                                 <input type="repassword" className='bg-transparent mx-auto' required name="repassword" id="repassword" />
-                                                <i className="fa-regular fa-eye" onClick={showHideRePass}></i>
+                                                <i className={`fa-regular fa-eye ${isEng ? 'right-icon' : 'left-icon'}`} onClick={showHideRePass}></i>
                                             </div>
                                         </div>
                                     </div>
@@ -229,7 +234,7 @@ export default function Signin() {
                                             Sign up
                                         </button>
                                     </div>
-                                    <h6 className='fw-bold mb-0 d-flex justify-content-center align-items-center'>Already have an account? <span className='fw-bold main-color mb-0 ms-1 text-decoration-underline' style={{cursor : 'pointer'}} onClick={() => {
+                                    <h6 className='fw-bold mb-0 d-flex justify-content-center align-items-center'>Already have an account? <span className={`fw-bold main-color mb-0 ${isEng ? 'ms-1' : 'me-1'} text-decoration-underline`} style={{cursor : 'pointer'}} onClick={() => {
                                         showSignInPage(hideSignUpPage)
                                     }}>  Sign In</span></h6>
                                 </div>
@@ -309,7 +314,7 @@ export default function Signin() {
                 </div>
 
                 {/* update password */}
-                <div className="d-none justify-content-center align-items-center updatepass-page">
+                <div className="d-flex justify-content-center align-items-center updatepass-page">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-lg-7 col-md-8 col-10">
                             <form className='p-4 bg-white rounded-4 position-relative'>
@@ -326,7 +331,7 @@ export default function Signin() {
                                             <label className="fs-5 fw-bold mb-1" htmlFor="password">Password</label>
                                             <div className="input-group">
                                                 <input type="password" className='bg-transparent mx-auto' required name="password" id="password" />
-                                                <i className="fa-regular fa-eye" onClick={showHidePass}></i>
+                                                <i className={`fa-regular fa-eye ${isEng ? 'right-icon' : 'left-icon'}`} onClick={showHidePass}></i>
                                             </div>
                                         </div>
                                     </div>
@@ -335,7 +340,7 @@ export default function Signin() {
                                             <label className="fs-5 fw-bold mb-1" htmlFor="repassword">Confirm Password</label>
                                             <div className="input-group">
                                                 <input type="repassword" className='bg-transparent mx-auto' required name="repassword" id="repassword" />
-                                                <i className="fa-regular fa-eye" onClick={showHideRePass}></i>
+                                                <i className={`fa-regular fa-eye ${isEng ? 'right-icon' : 'left-icon'}`} onClick={showHideRePass}></i>
                                             </div>
                                         </div>
                                     </div>

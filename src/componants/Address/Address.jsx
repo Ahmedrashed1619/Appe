@@ -10,6 +10,11 @@ import $ from 'jquery';
 export default function Address() {
 
 
+    useEffect(() => {
+        $('html , body').animate({ scrollTop: 0 }, 200);
+    }, []);
+
+
   let { isEng } = useContext(langContext);
 
   useEffect(() => {

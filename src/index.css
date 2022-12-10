@@ -954,14 +954,22 @@ transition: all 0.25s;
   .input-group i{
     position: absolute;
     top: 50%;
-    right: 12px;  
-    left: auto;   
     transform: translateY(-50%);
     font-size: 18px;
     padding: 5px;
     background-color: var(--transparent) !important;
     border: none;
     cursor: pointer;
+  }
+
+  .right-icon {
+    right: 12px !important;  
+    left: auto !important; 
+  }
+
+  .left-icon {
+    right: auto !important;  
+    left: 12px !important;
   }
 
 
@@ -1577,6 +1585,18 @@ transition: all 0.25s;
   min-height: 130px !important;
 }
 
+.img-wishlist-list img {
+  max-height: 180px;
+}
+
+.item-list {
+  margin-bottom: 2.5rem;
+}
+
+.item-list:last-child {
+  margin-bottom: 0 !important;
+}
+
 .border-refund-en {
   border-right: 1px solid #B9B9B9;
   border-left: none;
@@ -1591,4 +1611,10 @@ transition: all 0.25s;
   .product-details-refund {
     border: none !important;
   }
+}
+
+
+.addwishlist-page {
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.9);
 }
