@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Slider from "react-slick";
 import topslider from '../../images/home/topslider.png';
 import slideimg from '../../images/home/slideImg.png';
 import woman from '../../images/home/woman.png';
@@ -162,46 +163,94 @@ export default function Home() {
     // },
   }
 
+  // const sliderCategories = {
+  //   responsiveClass: true,
+  //   nav: false,
+  //   dots: false,
+  //   loop: true,
+  //   autoplay: true,
+  //   autoplayTimeout: 5000,
+  //   autoplayHoverPause: true,
+  //   mouseDrag: true,
+  //   touchDrag: true,
+  //   stagePadding: 40,
+  //   margin: 30,
+  //   responsive: {
+  //     0: {
+  //       items: 1,
+  //     },
+  //     700: {
+  //         items: 3,
+  //     },
+  //     1000: {
+  //         items: 6,
+  //     }
+  //   },
+  // }
+
   const sliderCategories = {
-    // items: 10,
-    responsiveClass: true,
-    nav: false,
     dots: false,
-    loop: true,
+    infinite: true,
+    // centerMode: true,
+    slidesToShow: 8,
+    slidesToScroll: 2,
+    initialSlide: 0,
     autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    mouseDrag: true,
-    touchDrag: true,
-    stagePadding: 40,
-    margin: 30,
-    responsive: {
-        0: {
-            item: 2,
-        },
-        400: {
-            item: 3,
-        },
-        600: {
-            items: 4,
-        },
-        700: {
-            items: 5,
-        },
-        850: {
-            items: 6,
-        },
-        992: {
-            items: 7,
-        },
-        1200: {
-            items: 8,
-        },
-        1400: {
-            items: 10,
+    speed: 1000,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 7,
+          slidesToScroll: 2,
         }
-    },
-  }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 300,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
 
   const sliderTopProducts = {
     // items: 10,
@@ -474,12 +523,18 @@ export default function Home() {
 
         {/* slider categories */}
         <section className='py-5'>
-          <div className="container-fluid container-xl special-w">
-            <OwlCarousel className="slider-items owl-carousel" {...sliderCategories}>
+          <div className="container-fluid container-xl">
+            {/* <OwlCarousel className="slider-items owl-carousel" {...sliderCategories}>
               {objCategories.map((item , i) => (
                 <SlideCategory key={i} link={item.link} img={item.img} textEn={item.textEn} textAr={item.textAr} />
               ))}
-            </OwlCarousel>
+            </OwlCarousel> */}
+
+            <Slider {...sliderCategories} className='text-center'>
+              {objCategories.map((item , i) => (
+                  <SlideCategory key={i} link={item.link} img={item.img} textEn={item.textEn} textAr={item.textAr} />
+              ))}
+            </Slider>
           </div>
         </section>
 
