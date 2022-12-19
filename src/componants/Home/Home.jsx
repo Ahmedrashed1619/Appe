@@ -196,7 +196,7 @@ export default function Home() {
     slidesToScroll: 2,
     initialSlide: 0,
     autoplay: true,
-    speed: 1000,
+    speed: 500,
     autoplaySpeed: 4000,
     cssEase: "linear",
     responsive: [
@@ -204,21 +204,21 @@ export default function Home() {
         breakpoint: 1200,
         settings: {
           slidesToShow: 7,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 1000,
         settings: {
           slidesToShow: 6,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 900,
         settings: {
           slidesToShow: 5,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         }
       },
       {

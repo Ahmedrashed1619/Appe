@@ -22,10 +22,10 @@ export default function Footer() {
           <span id="btnTopFooter" className={`position-absolute top-0 end-0 translate-middle main-color`} style={{cursor : 'pointer'}}>
               <i className="fa-solid fa-chevron-up fs-3 p-3 bg-white rounded-circle shadow-lg"></i>
           </span>
-          <div className="container">
+          <div className="container-fluid container-xl">
               <div className="row justify-content-lg-start justify-content-center gy-4">
 
-                  <div className="col-lg-4 col-10">
+                  <div className="col-lg-4 col-11">
                     <div className="logo-footer">
                       <div className="cont-imgFooter">
                         <img src={imgFooter} className='mx-auto' style={{width : '85%'}} alt="logo" />
@@ -47,9 +47,9 @@ export default function Footer() {
                     </div>
                   </div>
 
-                  <div className="col-lg-8 col-10">
+                  <div className="col-lg-8 col-11">
                     <div className="row gy-4">
-                      <div className="col-sm-4 col-12">
+                      <div className="col-sm-4 col-6">
                         <div className="navigate mt-lg-5">
                           <h4 className='mb-4'>Navigation</h4>
                           <div className="links-foot d-flex justify-content-center flex-column">
@@ -65,7 +65,7 @@ export default function Footer() {
                           </div>
                         </div>
                       </div>
-                      <div className="col-sm-4 col-12">
+                      <div className="col-sm-4 col-6">
                         <div className="navigate mt-lg-5">
                           <h4 className='mb-4'>Category</h4>
                           <div className="links-foot d-flex justify-content-center flex-column">
@@ -81,7 +81,7 @@ export default function Footer() {
                           </div>
                         </div>
                       </div>
-                      <div className="col-sm-4 col-12">
+                      <div className="col-sm-4 col-6">
                         <div className="navigate mt-lg-5">
                           <h4 className='mb-4'>Company</h4>
                           <div className="links-foot d-flex justify-content-center flex-column">
