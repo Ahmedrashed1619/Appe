@@ -12,7 +12,7 @@ import explore2 from '../../images/home/Rectangle 49 (1).png';
 import explore3 from '../../images/home/Rectangle 49 (2).png';
 import explore4 from '../../images/home/Rectangle 49 (3).png';
 import { langContext } from '../context/store';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import ItemCart from '../ItemCart/ItemCart';
 import ItemProduct from '../ItemProduct/ItemProduct';
@@ -44,7 +44,7 @@ export default function Home() {
   }, [])
 
 
-  let { isEng } = useContext(langContext);
+  // let { isEng } = useContext(langContext);
 
   // const ref = useRef(null);
 
