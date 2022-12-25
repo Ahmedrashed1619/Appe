@@ -30,126 +30,126 @@ export default function Brands() {
     <>
       <section className='pb-5'>
         <div className="mt-fixed">
-          <div className="container-fluid container-xl special-w">
+          <div className="container-fluid container-xl">
             <div className="row gy-4 d-flex justify-content-center align-items-center">
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img1} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img1} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img2} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img2} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img3} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img3} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img4} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img4} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img5} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img5} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img6} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img6} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img7} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img7} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img8} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img8} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img1} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img1} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img2} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img2} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img3} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img3} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img4} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img4} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img5} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img5} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img6} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img6} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img7} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img7} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img8} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img8} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img1} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img1} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img2} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img2} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img3} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img3} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img4} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img4} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img5} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img5} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img6} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img6} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img7} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img7} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-6 col-11">
                 <div className="img-brand p-5 bg-light rounded-5">
-                  <img src={img8} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'img-accessories'} />
+                  <img src={img8} style={{width: '100%' , height: '200px' , overflow: 'hidden'}} alt={'item-accessories'} />
                 </div>
               </div>
             </div>

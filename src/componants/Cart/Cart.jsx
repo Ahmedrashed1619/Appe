@@ -50,7 +50,7 @@ export default function Cart() {
       {isEmpty ? <h1 className='text-center mt-fixed py-5'>Your Cart is Empty..</h1> :      
         <section className='mb-4 pb-4' dir={isEng ? 'ltr' : 'rtl'}>
           <div className="mt-fixed">
-            <div className="container-fluid container-xl special-w">
+            <div className="container-fluid container-xl">
               <h2 className='alert alert-main py-2 fw-bold mb-5'>Cart <span style={{color : '#656565' , fontSize : '16px'}}>({totalItems > 0 ? totalItems : ''} {totalItems > 1 ? 'Items' : totalItems === 1 ? 'Item' : ''})</span></h2>
               <div className="row g-4 d-flex justify-content-center">
                 <div className="col-lg-8 col-11">

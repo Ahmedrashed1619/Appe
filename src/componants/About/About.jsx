@@ -18,7 +18,7 @@ export default function About() {
     <>
       <section className='pb-4' dir={isEng ? 'ltr' : 'rtl'}>
         <div className="mt-fixed">
-          <div className="container-fluid container-xl special-w">
+          <div className="container-fluid container-xl">
             <h2 className='alert alert-main py-2 fw-bold text-center'>About Appe</h2>
             <div className="parag-bolg">
               <h3 className='fw-bold mt-4'>About Appe</h3>

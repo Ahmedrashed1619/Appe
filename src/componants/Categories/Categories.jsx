@@ -118,8 +118,8 @@ export default function Categories() {
 
   return (
     <>
-      <div className="conyainer-fluid">
-        <div className="row d-flex justify-content-center align-items-center g-4">
+      <div className="container-fluid">
+        <div className="row d-flex align-items-center g-4">
           {objCategories.map((item , i) => (
             <CategoryItem key={i} img={item.img} textEn={item.textEn} textAr={item.textAr} id={item.id} />
           ))}

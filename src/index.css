@@ -489,10 +489,16 @@ transition: all 0.25s;
 }
 
 .category-links .cont-group ul li a {
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 600;
     color: var(--black);
     transition: all 0.25s;
+}
+
+@media screen and (max-width: 1300px) {
+  .category-links .cont-group ul li a {
+    font-size: 14px;
+}
 }
 
 .category-links .cont-group ul li a:hover,
@@ -545,11 +551,20 @@ transition: all 0.25s;
     }
 }
 
-
 @media only screen and (max-width: 992px){
     .mt-fixed {
         margin-top: 135px !important;
     }
+}
+
+@media only screen and (max-width: 768px){
+  .owl-carousel .owl-dots button.owl-dot {
+    width: 18px !important;
+  }
+
+  .owl-carousel .owl-dots button.owl-dot:not(:last-child) {
+      margin-right: 6px;
+  }
 }
 
 @media only screen and (max-width: 460px){
@@ -577,31 +592,38 @@ transition: all 0.25s;
     background-color: #FAFAFA !important;
     box-shadow: var(--firstBoxShadow);
     border-radius: 8px;
+    margin: 0 10px ;
+    /* border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; */
+}
+
+.item-top-product.explore {
+  margin: 0;
 }
 
 .item-top-product span {
-    width: 20px;
-    height: 20px;
+    width: 35px;
+    height: 35px;
     background-color: var(--white);
     opacity: 0.75;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 12px;
-    right: 12px;
+    top: 14px;
+    right: 20px;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .item-top-product svg {
-    font-size: 12px;
+    font-size: 20px;
     color: red;
 }
 
 .item-top-product h6 {
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 700;
     color: var(--black);
     margin-bottom: 0;
@@ -609,7 +631,7 @@ transition: all 0.25s;
 
 .item-top-product del,
 .item-top-product small {
-    font-size: 12px;
+    font-size: 14px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
@@ -625,25 +647,25 @@ transition: all 0.25s;
     }
 
     .item-top-product span {
-        width: 15px;
-        height: 15px;
+        width: 28px;
+        height: 28px;
     }
 
     .item-top-product svg {
-        font-size: 10px;
+        font-size: 18px;
     }
 
     .item-top-product h6 {
-        font-size: 10px !important;
+        font-size: 14px !important;
     }
 
     .item-top-product h5 {
-        font-size: 12px !important;
+        font-size: 16px !important;
     }
 
     .item-top-product small,
     .item-top-product del {
-        font-size: 8px;
+        font-size: 12px !important;
     }
 
     .alert-main {
@@ -737,8 +759,9 @@ transition: all 0.25s;
     .btn{
         font-size: 12px !important;
     }
-
 }
+
+
 
 
 .table-shipping td {
@@ -1621,4 +1644,16 @@ transition: all 0.25s;
 }
 
 
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: var(--mainColor) !important;
+  border-radius: 40px !important;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--alert) !important;
+  border-radius: 20px !important;
+}

@@ -19,7 +19,7 @@ export default function RefundConditions() {
     <>
       <section className='pb-4' dir={isEng ? 'ltr' : 'rtl'}>
         <div className="mt-fixed">
-          <div className="container-fluid container-xl special-w">
+          <div className="container-fluid container-xl">
             <h2 className='alert alert-main py-2 fw-bold text-center'>Appe Refund Conditions</h2>
 
             <div className="row g-4 d-flex justify-content-center align-items-center flex-lg-row flex-column-reverse mt-1">

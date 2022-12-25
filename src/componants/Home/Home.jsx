@@ -137,63 +137,13 @@ export default function Home() {
     },
   }
 
-  const slideImg = {
-    items: 1,
-    responsiveClass: true,
-    nav: false,
-    dots: false,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    mouseDrag: true,
-    touchDrag: true,
-    stagePadding: 60,
-    margin: 30,
-    // responsive: {
-    //     0: {
-    //         items: 1,
-    //     },
-    //     992: {
-    //         items: 1,
-    //     },
-    //     1250: {
-    //         items: 1,
-    //     }
-    // },
-  }
-
-  // const sliderCategories = {
-  //   responsiveClass: true,
-  //   nav: false,
-  //   dots: false,
-  //   loop: true,
-  //   autoplay: true,
-  //   autoplayTimeout: 5000,
-  //   autoplayHoverPause: true,
-  //   mouseDrag: true,
-  //   touchDrag: true,
-  //   stagePadding: 40,
-  //   margin: 30,
-  //   responsive: {
-  //     0: {
-  //       items: 1,
-  //     },
-  //     700: {
-  //         items: 3,
-  //     },
-  //     1000: {
-  //         items: 6,
-  //     }
-  //   },
-  // }
-
   const sliderCategories = {
     dots: false,
+    arrows: false,
     infinite: true,
     // centerMode: true,
     slidesToShow: 8,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     initialSlide: 0,
     autoplay: true,
     speed: 500,
@@ -253,7 +203,72 @@ export default function Home() {
   };
 
   const sliderTopProducts = {
-    // items: 10,
+    dots: false,
+    arrows: false,
+    infinite: true,
+    // centerMode: true,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    initialSlide: 0,
+    autoplay: true,
+    speed: 500,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      // {
+      //   breakpoint: 300,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1
+      //   }
+      // }
+    ]
+  }
+
+  const slideImg = {
+    items: 1,
     responsiveClass: true,
     nav: false,
     dots: false,
@@ -263,63 +278,73 @@ export default function Home() {
     autoplayHoverPause: true,
     mouseDrag: true,
     touchDrag: true,
-    stagePadding: 40,
+    stagePadding: 60,
     margin: 30,
-    responsive: {
-        0: {
-            item: 2,
-        },
-        400: {
-            item: 3,
-        },
-        600: {
-            items: 4,
-        },
-        700: {
-          items: 5,
-        },
-        850: {
-            items: 6,
-        },
-        992: {
-            items: 7,
-        },
-        1200: {
-            items: 8,
-        }
-    },
   }
 
   const explorecategories = {
-    // items: 10,
-    responsiveClass: true,
-    nav: false,
     dots: false,
-    loop: true,
+    arrows: false,
+    infinite: true,
+    // centerMode: true,
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    initialSlide: 0,
     autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    mouseDrag: true,
-    touchDrag: true,
-    stagePadding: 40,
-    margin: 30,
-    responsive: {
-        500: {
-            item: 2,
-        },
-        600: {
-            items: 3,
-        },
-        900: {
-          items: 4,
-        },
-        1200: {
-            items: 5,
-        },
-        1400: {
-            items: 6,
-        },
-    },
+    speed: 500,
+    autoplaySpeed: 4000,
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 1000,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 750,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 500,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      },
+      // {
+      //   breakpoint: 450,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1
+      //   }
+      // },
+    ]
   }
 
   const exploreObj = 
@@ -524,12 +549,6 @@ export default function Home() {
         {/* slider categories */}
         <section className='py-5'>
           <div className="container-fluid container-xl">
-            {/* <OwlCarousel className="slider-items owl-carousel" {...sliderCategories}>
-              {objCategories.map((item , i) => (
-                <SlideCategory key={i} link={item.link} img={item.img} textEn={item.textEn} textAr={item.textAr} />
-              ))}
-            </OwlCarousel> */}
-
             <Slider {...sliderCategories} className='text-center'>
               {objCategories.map((item , i) => (
                   <SlideCategory key={i} link={item.link} img={item.img} textEn={item.textEn} textAr={item.textAr} />
@@ -545,37 +564,42 @@ export default function Home() {
 
         {/* top products */}
         <section className='py-4'>
-          <div className="container-fluid container-xl special-w">
-            <h4 className='fw-bold mb-3'>Top Products</h4>
-            <OwlCarousel className="slider-items owl-carousel" {...sliderTopProducts}>
+          <div className="container-fluid container-xl">
+            <h3 className='fw-bold mb-3'>Top Products</h3>
+            <Slider {...sliderTopProducts} className='text-center'>
               {objCategories.map((item , i) => (
                   <ItemProduct key={i} id={item.id} img={item.img} textEn={item.textEn} textAr={item.textAr} item={item}/>
               ))}
-            </OwlCarousel>
+            </Slider>
+            {/* <OwlCarousel className="slider-items owl-carousel" {...sliderTopProducts}>
+              {objCategories.map((item , i) => (
+                  <ItemProduct key={i} id={item.id} img={item.img} textEn={item.textEn} textAr={item.textAr} item={item}/>
+              ))}
+            </OwlCarousel> */}
           </div>
         </section>
 
         {/* top offers */}
         <section className='py-4'>
-          <div className="container-fluid container-xl special-w">
-            <h4 className='fw-bold mb-3'>Top Offers</h4>
-            <OwlCarousel className="slider-items owl-carousel" {...sliderTopProducts}>
+          <div className="container-fluid container-xl">
+            <h3 className='fw-bold mb-3'>Top Offers</h3>
+            <Slider {...sliderTopProducts} className='text-center'>
               {objCategories.map((item , i) => (
                   <ItemProduct key={i} id={item.id} img={item.img} textEn={item.textEn} textAr={item.textAr} item={item}/>
               ))}
-            </OwlCarousel>
+            </Slider>
           </div>
         </section>
 
         {/* best sallers */}
         <section className='py-4'>
-          <div className="container-fluid container-xl special-w">
-            <h4 className='fw-bold mb-3'>Best Sellers</h4>
-            <OwlCarousel className="slider-items owl-carousel" {...sliderTopProducts}>
+          <div className="container-fluid container-xl">
+            <h3 className='fw-bold mb-3'>Best Sellers</h3>
+            <Slider {...sliderTopProducts} className='text-center'>
               {objCategories.map((item , i) => (
                   <ItemProduct key={i} id={item.id} img={item.img} textEn={item.textEn} textAr={item.textAr} item={item}/>
               ))}
-            </OwlCarousel>
+            </Slider>
           </div>
         </section>
 
@@ -604,104 +628,106 @@ export default function Home() {
 
         {/* Daily Offer */}
         <section className='py-4'>
-          <div className="container-fluid container-xl special-w">
-            <h4 className='fw-bold mb-3'>Daily Offer</h4>
-            <OwlCarousel className="slider-items owl-carousel" {...sliderTopProducts}>
+          <div className="container-fluid container-xl">
+            <h3 className='fw-bold mb-3'>Daily Offer</h3>
+            <Slider {...sliderTopProducts} className='text-center'>
               {objCategories.map((item , i) => (
                   <ItemProduct key={i} id={item.id} img={item.img} textEn={item.textEn} textAr={item.textAr} item={item}/>
               ))}
-            </OwlCarousel>
+            </Slider>
           </div>
         </section>
 
         {/* Recomended */}
         <section className='py-4'>
-          <div className="container-fluid container-xl special-w">
-            <h4 className='fw-bold mb-3'>Recomended</h4>
-            <OwlCarousel className="slider-items owl-carousel" {...sliderTopProducts}>
+          <div className="container-fluid container-xl">
+            <h3 className='fw-bold mb-3'>Recomended</h3>
+            <Slider {...sliderTopProducts} className='text-center'>
               {objCategories.map((item , i) => (
                   <ItemProduct key={i} id={item.id} img={item.img} textEn={item.textEn} textAr={item.textAr} item={item}/>
               ))}
-            </OwlCarousel>
+            </Slider>
           </div>
         </section>
 
         {/* Just For You */}
         <section className='py-4'>
-          <div className="container-fluid container-xl special-w">
-            <h4 className='fw-bold mb-3'>Just For You</h4>
-            <OwlCarousel className="slider-items owl-carousel" {...sliderTopProducts}>
+          <div className="container-fluid container-xl">
+            <h3 className='fw-bold mb-3'>Just For You</h3>
+            <Slider {...sliderTopProducts} className='text-center'>
               {objCategories.map((item , i) => (
                   <ItemProduct key={i} id={item.id} img={item.img} textEn={item.textEn} textAr={item.textAr} item={item}/>
               ))}
-            </OwlCarousel>
+            </Slider>
           </div>
         </section>
 
         {/* Explore More For Beauty */}
         <section className='py-4 main-bg'>
-          <div className="container-fluid container-xl special-w">
+          <div className="container-fluid container-xl">
             <h2 className='fw-bold mb-4 mb-lg-5 text-center'>Explore More For Beauty</h2>
-            <OwlCarousel className="slider-items owl-carousel" {...explorecategories}>
+            <Slider {...explorecategories} className='text-center'>
               {exploreObj.map((item , i) => (
-                <div key={i} className="item-top-product text-center pb-2">
-                  <img src={item.img} alt={item.title} className='mb-2'/>
+                <div key={i} className="item-top-product explore text-center pb-2">
+                  <img src={item.img} alt={item.title} className='mb-2 w-100 mx-auto'/>
                   <h5 className='fw-bold text-black mb-1'>{item.title}</h5>
                   <h6 className='fw-bold main-color'>{item.text}</h6>
                 </div>
               ))}
-            </OwlCarousel>
+            </Slider>
           </div>
         </section>
 
         {/* Recently Viewed */}
         <section className='py-4'>
-          <div className="container-fluid container-xl special-w">
-            <h4 className='fw-bold mb-3'>Recently Viewed</h4>
-            <OwlCarousel className="slider-items owl-carousel" {...sliderTopProducts}>
+          <div className="container-fluid container-xl">
+            <h3 className='fw-bold mb-3'>Recently Viewed</h3>
+            <Slider {...sliderTopProducts} className='text-center'>
               {objCategories.map((item , i) => (
                   <ItemProduct key={i} id={item.id} img={item.img} textEn={item.textEn} textAr={item.textAr} item={item}/>
               ))}
-            </OwlCarousel>
+            </Slider>
           </div>
         </section>
 
         {/* Top Appliance */}
         <section className='py-4'>
-          <div className="container-fluid container-xl special-w">
-            <h4 className='fw-bold mb-3'>Top Appliance</h4>
-            <OwlCarousel className="slider-items owl-carousel" {...sliderTopProducts}>
+          <div className="container-fluid container-xl">
+            <h3 className='fw-bold mb-3'>Top Appliance</h3>
+            <Slider {...sliderTopProducts} className='text-center'>
               {objCategories.map((item , i) => (
                   <ItemProduct key={i} id={item.id} img={item.img} textEn={item.textEn} textAr={item.textAr} item={item}/>
               ))}
-            </OwlCarousel>
+            </Slider>
           </div>
         </section>
 
         {/* Shopping by brand */}
         <section className='py-4'>
-          <div className="container-fluid container-xl special-w">
-            <h4 className='fw-bold mb-3'>Shopping by brand</h4>
-            <OwlCarousel className="slider-items owl-carousel mb-3" {...sliderTopProducts}>
+          <div className="container-fluid container-xl">
+            <h3 className='fw-bold mb-3'>Shopping by brand</h3>
+            {/* <OwlCarousel className="slider-items owl-carousel mb-3" {...sliderTopProducts}> */}
+            <Slider {...sliderTopProducts} className='text-center mb-4'>
               {objCategories.map((item , i) => (
-                <div key={i} className="item-top-product">
-                  <img src={item.img} alt={item.textEn}/>
+                <div key={i}>
+                  <img src={item.img} alt={item.textEn} className='mx-auto' style={{width: '90%'}}/>
                 </div>
               ))}
-            </OwlCarousel>
-            <OwlCarousel className="slider-items owl-carousel" {...sliderTopProducts}>
+            </Slider>
+            {/* </OwlCarousel> */}
+            <Slider {...sliderTopProducts} className='text-center'>
               {objCategories.map((item , i) => (
-                <div key={i} className="item-top-product">
-                  <img src={item.img} alt={item.textEn}/>
+                <div key={i}>
+                  <img src={item.img} alt={item.textEn} className='mx-auto' style={{width: '90%'}}/>
                 </div>
               ))}
-            </OwlCarousel>
+            </Slider>
           </div>
         </section>
 
 
         <section className='py-5'>
-          <div className="container-fluid container-xl special-w">
+          <div className="container-fluid container-xl">
             <div className="row d-flex justify-content-center">
               {data.productData.map((item , i) => (
                   <ItemCart key={i} img={item.img} title={item.title} text={item.text} price={item.price} item={item}/>

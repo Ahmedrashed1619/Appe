@@ -120,10 +120,10 @@ export default function News() {
     <>
       <section className='pb-5' dir={isEng ? 'ltr' : 'rtl'}>
         <div className="mt-fixed ">
-          <div className="container-fluid container-xl special-w">
+          <div className="container-fluid container-xl">
             <h2 className='alert alert-main py-2 fw-bold text-center'>News</h2>
 
-            <div className="row gy-4 d-flex justify-content-center align-items-center mt-5">
+            <div className="row gy-4 d-flex align-items-center mt-5">
               {newsItems.map((item , i) => (
                 <NewsItem 
                     key={i} 

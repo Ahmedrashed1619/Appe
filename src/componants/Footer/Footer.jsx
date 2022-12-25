@@ -41,7 +41,7 @@ export default function Footer() {
                                   className="fa-brands fa-instagram"></i></a>
                           <a target="_blank" rel="noopener noreferrer" className={isEng ? 'mr-15' : 'ml-15'} href="https://wa.me/+966566770235"><i
                                   className="fa-brands fa-whatsapp"></i></a>
-                          <a target="_blank" rel="noopener noreferrer" className={isEng ? 'mr-15' : 'ml-15'} href="https://wa.me/+966566770235"><i
+                          <a target="_blank" rel="noopener noreferrer" className={isEng ? 'mr-15' : 'ml-15'} href="https://www.linkedin.com/in/zari-solution-ksa-12717623b/"><i
                                   className="fa-brands fa-linkedin-in"></i></a>
                       </div>
                     </div>

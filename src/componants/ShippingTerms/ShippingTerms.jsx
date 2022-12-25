@@ -20,7 +20,7 @@ export default function ShippingTerms() {
     <>
       <section className='pb-5' dir={isEng ? 'ltr' : 'rtl'}>
         <div className="mt-fixed">
-          <div className="container-fluid container-xl special-w">
+          <div className="container-fluid container-xl">
             <h2 className='alert alert-main py-2 fw-bold text-center'>Appe Shipping Terms</h2>
 
             <div className="row g-4 d-flex justify-content-center align-items-center flex-lg-row flex-column-reverse mt-3 mb-5">

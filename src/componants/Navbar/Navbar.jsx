@@ -16,59 +16,59 @@ import { useCart } from 'react-use-cart';
 export default function Navbar() {
 
 
-  let { isEng, changeLang } = useContext(langContext);
+    let { isEng, changeLang } = useContext(langContext);
 
 
-  const [isActive, setActive] = useState(false);
+    const [isActive, setActive] = useState(false);
 
 
-  const handelClick = () => {
-      setActive(!isActive);
-  }
-
-  const closeNavbar = () => {
-    if(isActive === true && $('body, html').width() < 992) {
-        setActive(!isActive)
-        $('.navbar .navbar-toggler').attr('aria-expanded', 'false');
-        $('.navbar .collapse').removeClass('show')
+    const handelClick = () => {
+        setActive(!isActive);
     }
-  }
 
-
-  const changeDir = () => {
-    if(isEng === true) {
-
-      $('.category-links .cont-group ul li:not(:last-child)').css({'marginRight' : '8px' , 'marginLeft' : 'auto'});
-
+    const closeNavbar = () => {
+        if(isActive === true && $('body, html').width() < 992) {
+            setActive(!isActive)
+            $('.navbar .navbar-toggler').attr('aria-expanded', 'false');
+            $('.navbar .collapse').removeClass('show')
+        }
     }
-    else {
-      
-      $('.category-links .cont-group ul li:not(:last-child)').css({'marginLeft' : '18px' , 'marginRight' : 'auto'});
 
+
+    const changeDir = () => {
+        if(isEng === true) {
+
+        $('.category-links .cont-group ul li:not(:last-child)').css({'marginRight' : '8px' , 'marginLeft' : 'auto'});
+
+        }
+        else {
+        
+        $('.category-links .cont-group ul li:not(:last-child)').css({'marginLeft' : '18px' , 'marginRight' : 'auto'});
+
+        }
     }
-  }
 
-  useEffect(() => {
-    changeDir();
-  
-    return () => {
-      changeDir();
-    }
-  }, [isEng])
-  
+    useEffect(() => {
+        changeDir();
+    
+        return () => {
+        changeDir();
+        }
+    }, [isEng])
+    
 
 
-  const { 
-    // items,
-    // isEmpty,
-    totalItems,
-    // totalUniqueItems,
-    // cartTotal,
-    // updateItemQuantity,
-    // removeItem,
-    // emptyCart,
+    const { 
+        // items,
+        // isEmpty,
+        totalItems,
+        // totalUniqueItems,
+        // cartTotal,
+        // updateItemQuantity,
+        // removeItem,
+        // emptyCart,
 
-} = useCart();
+    } = useCart();
 
 
     return (
@@ -131,7 +131,7 @@ export default function Navbar() {
                         </ul>
 
                         <div className="d-flex w-40 group position-relative mx-auto mx-lg-3" role="search">
-                        <input className={`form-control ${isEng ? 'ps-3 pe-5' : 'ps-5 pe-3'}`} type="text" placeholder="Search" aria-label="Search" />
+                        <input className={`form-control ${isEng ? 'ps-3 pe-5' : 'ps-5 pe-3'}`} type="text" placeholder={isEng ? 'Search' : 'بـحـــث'} aria-label="Search" />
                         <BsSearch className={`${isEng ? 'right-15' : 'left-15'}`}/>
                         </div>
 

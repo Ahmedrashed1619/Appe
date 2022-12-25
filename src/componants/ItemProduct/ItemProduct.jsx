@@ -24,7 +24,7 @@ export default function ItemProduct({ id , item , img , textEn , textAr }) {
                 <span onClick={getLiked}>
                     {liked ? <AiFillHeart /> : <AiOutlineHeart />}
                 </span>
-                <img src={img} alt={textEn} className='mb-2'/>
+                <img src={img} alt={textEn} className='mb-2 w-100'/>
                 <h6 className={`${isEng ? 'ms-2' : 'me-2'}`}>{isEng ? textEn : textAr}</h6>
                 <small className={`${isEng ? 'ms-2' : 'me-2'} main-color`}>150 LE</small>
             </div>

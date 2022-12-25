@@ -19,7 +19,7 @@ export default function Notification() {
     <>
       <section className='pb-5' dir={isEng ? 'ltr' : 'rtl'}>
           <div className="mt-fixed ">
-            <div className="container-fluid container-xl special-w">
+            <div className="container-fluid container-xl">
               <h2 className='alert alert-main py-2 fw-bold'>Notification</h2>
 
               <div className="row d-flex justify-content-center align-items-center flex-column mt-4">
@@ -28,7 +28,7 @@ export default function Notification() {
                           <h6 className='mb-3'>Yesterday</h6>
                           <div className="d-flex justify-content-between">
                             <div className="notification d-flex align-items-center">
-                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'} me-3`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
+                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'}`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
                                     <img src={not} className='w-100 rounded-circle' style={{padding: '10px', backgroundColor: '#fefefe'}} alt="note" />
                                 </div>
                                 <div className="content-notification">
@@ -41,7 +41,7 @@ export default function Notification() {
                           <hr />
                           <div className="d-flex justify-content-between">
                             <div className="notification d-flex align-items-center">
-                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'} me-3`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
+                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'}`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
                                     <img src={not} className='w-100 rounded-circle' style={{padding: '10px', backgroundColor: '#fefefe'}} alt="note" />
                                 </div>
                                 <div className="content-notification">
@@ -54,7 +54,7 @@ export default function Notification() {
                           <hr />
                           <div className="d-flex justify-content-between">
                             <div className="notification d-flex align-items-center">
-                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'} me-3`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
+                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'}`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
                                     <img src={not} className='w-100 rounded-circle' style={{padding: '10px', backgroundColor: '#fefefe'}} alt="note" />
                                 </div>
                                 <div className="content-notification">
@@ -69,7 +69,7 @@ export default function Notification() {
                           <h6 className='mb-3'>Old</h6>
                           <div className="d-flex justify-content-between">
                             <div className="notification d-flex align-items-center">
-                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'} me-3`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
+                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'}`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
                                     <img src={not} className='w-100 rounded-circle' style={{padding: '10px', backgroundColor: '#fefefe'}} alt="note" />
                                 </div>
                                 <div className="content-notification">
@@ -82,7 +82,7 @@ export default function Notification() {
                           <hr />
                           <div className="d-flex justify-content-between">
                             <div className="notification d-flex align-items-center">
-                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'} me-3`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
+                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'}`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
                                     <img src={not} className='w-100 rounded-circle' style={{padding: '10px', backgroundColor: '#fefefe'}} alt="note" />
                                 </div>
                                 <div className="content-notification">
@@ -95,7 +95,7 @@ export default function Notification() {
                           <hr />
                           <div className="d-flex justify-content-between">
                             <div className="notification d-flex align-items-center">
-                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'} me-3`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
+                                <div className={`img-notification ${isEng ? 'me-3' : 'ms-3'}`} style={{width: '60px' , height: '60px' , borderRadius: '50%'}}>
                                     <img src={not} className='w-100 rounded-circle' style={{padding: '10px', backgroundColor: '#fefefe'}} alt="note" />
                                 </div>
                                 <div className="content-notification">

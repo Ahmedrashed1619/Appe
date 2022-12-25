@@ -111,7 +111,7 @@ export default function Signin() {
             <div className="mt-fixed position-relative" dir={isEng ? 'ltr' : 'rtl'}>
 
                 {/* sign in */}
-                <div className="d-none justify-content-center align-items-center signin-page">
+                <div className="d-flex justify-content-center align-items-center signin-page">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-lg-6 col-md-8 col-10">
                             <form className='p-4 bg-white rounded-4 position-relative'>
@@ -314,7 +314,7 @@ export default function Signin() {
                 </div>
 
                 {/* update password */}
-                <div className="d-flex justify-content-center align-items-center updatepass-page">
+                <div className="d-none justify-content-center align-items-center updatepass-page">
                     <div className="row justify-content-center align-items-center">
                         <div className="col-lg-7 col-md-8 col-10">
                             <form className='p-4 bg-white rounded-4 position-relative'>

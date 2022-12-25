@@ -26,7 +26,7 @@ export default function Contact() {
     <>
       <section className='pb-5' dir={isEng ? 'ltr' : 'rtl'}>
         <div className="mt-fixed">
-          <div className="container-fluid container-xl special-w">
+          <div className="container-fluid container-xl">
             <h2 className='alert alert-main py-2 mb-4 fw-bold text-center'>Contact us</h2>
             <h3 className={`fw-bold mb-3 ${isEng ? 'text-lg-start' : 'text-lg-end'}  text-center`}>We are here for you..</h3>
             <div className="row g-4 d-flex justify-content-center align-items-center flex-lg-row flex-column-reverse">

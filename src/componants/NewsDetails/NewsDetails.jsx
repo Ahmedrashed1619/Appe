@@ -25,7 +25,7 @@ export default function NewsDetails() {
             </div>
             <div className="caption-blog d-flex justify-content-between align-items-center mt-5 mb-4">
                 <div className="name-blog-author">
-                  <h3 className='fw-bold mb-0'>Blog Title Here</h3>
+                  <h3 className='fw-bold mb-0'>News Title Here</h3>
                 </div>
                 <div className="date">
                   <h6 className='second-color mb-0'>Published in 2 Oct 2022</h6>

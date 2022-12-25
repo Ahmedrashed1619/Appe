@@ -1,6 +1,7 @@
 import React, { useContext, useEffect } from 'react';
 import $ from 'jquery';
 import { langContext } from '../context/store';
+import { Link } from 'react-router-dom';
 
 
 
@@ -81,7 +82,8 @@ export default function Carrer() {
 
                         <div className="submitAdd-buttons mt-5 d-flex justify-content-center align-items-center">
                             <button type='submit' className={`btn main-btn py-2 px-5 ${isEng ? 'me-4' : 'ms-4'}`}>Join us</button>
-                            <button onClick={resetForm} className="btn second-btn py-2 px-5">Cancel</button>
+                            {/* <button onClick={resetForm} className="btn second-btn py-2 px-5">Cancel</button> */}
+                            <Link to='../Home' className="btn second-btn py-2 px-5">Cancel</Link>
                         </div>
 
                     </form>
