@@ -1,4 +1,5 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useEffect } from 'react';
+// import React, { useContext } from 'react';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -11,7 +12,7 @@ import explore1 from '../../images/home/Rectangle 49.png';
 import explore2 from '../../images/home/Rectangle 49 (1).png';
 import explore3 from '../../images/home/Rectangle 49 (2).png';
 import explore4 from '../../images/home/Rectangle 49 (3).png';
-import { langContext } from '../context/store';
+// import { langContext } from '../context/store';
 // import { Link } from 'react-router-dom';
 import $ from 'jquery';
 import ItemCart from '../ItemCart/ItemCart';

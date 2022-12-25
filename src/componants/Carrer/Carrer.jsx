@@ -12,12 +12,12 @@ export default function Carrer() {
     }, []);
 
 
-    const resetForm = () => {
-        let inputs = Array.from(document.querySelectorAll('.form-join input'));
-        inputs.forEach((input) => {
-            input.value = '';
-        })
-    }
+    // const resetForm = () => {
+    //     let inputs = Array.from(document.querySelectorAll('.form-join input'));
+    //     inputs.forEach((input) => {
+    //         input.value = '';
+    //     })
+    // }
 
 
     let { isEng } = useContext(langContext);

@@ -1,4 +1,5 @@
-import React, { useContext , useEffect } from 'react';
+import React, { useContext } from 'react';
+// import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { langContext } from '../context/store';
 import imgFooter from '../../images/footer/Logo 1.png';

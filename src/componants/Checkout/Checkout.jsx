@@ -1,4 +1,5 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
+// import { useState } from 'react';
 import { langContext } from '../context/store';
 import CartCopon from '../CartCopon/CartCopon';
 import { useCart } from 'react-use-cart';
